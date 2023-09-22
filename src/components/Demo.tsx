@@ -2,7 +2,10 @@
 import { useState, useEffect } from "react";
 import { useLazyGetSummaryQuery } from "../services/Article";
 
-import { copy, linkIcon, loader, tick } from "../assets";
+import linkIcon from "../assets/link.svg";
+import copy from "../assets/copy.svg";
+import tick from "../assets/tick.svg";
+import loader from "../assets/loader.svg";
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -11,7 +14,7 @@ const Demo = () => {
   });
 
   const [allArticles, setAllArticles] = useState<any[]>([]);
-  const [copied, setCopied] = useState("");
+  const [copied, setCopied] = useState(false);
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
@@ -130,7 +133,9 @@ const Demo = () => {
           <p className="text-red-500 text-sm">
             Well.... <br />{" "}
             <span className="font-satoshi font-normal text-gray-700">
-              {error?.data?.error}
+              {
+                "We couldn't find the article you're looking for. Please try another URL"
+              }
             </span>
           </p>
         ) : (
