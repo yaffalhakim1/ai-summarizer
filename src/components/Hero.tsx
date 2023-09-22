@@ -1,4 +1,4 @@
-import { logo } from "../assets";
+import logo from "../assets/logo.svg";
 
 function Hero() {
   return (

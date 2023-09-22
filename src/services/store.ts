@@ -7,5 +7,4 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(articleApi.middleware),
-  //   devTools: process.env.NODE_ENV !== "production",
 });
