@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# AI Summarizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the AI Summarizer project! Our AI-powered tool is designed to make your life easier by summarizing articles and content from the web. Whether you're a student, researcher, or just looking to save time, our platform has got you covered.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Article Summarization**: Quickly summarize lengthy articles and web content into concise and informative summaries.
 
-## Expanding the ESLint configuration
+- **Web Scraping**: Automatically fetch and process articles from websites with a simple URL input.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Customization**: Fine-tune the length and style of the summaries to meet your specific needs.
 
-- Configure the top-level `parserOptions` property like this:
+- **Save and Share**: Save your summaries for future reference or share them with others.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To start summarizing articles with our AI Summarizer, follow these steps:
+
+1. Sign up for an account on our website [https://summarizer-drab.vercel.app/]
+
+2. Access the AI Summarizer tool.
+
+3. Enter the URL of the article you want to summarize or paste the article text directly.
+
+4. Customize the summary length and style (if desired).
+
+5. Click the "Summarize" button, and our AI will generate a summary for you.
+
+
+---
+
+Feel free to reach out to us if you have any questions or need assistance with summarizing articles. Enjoy the convenience of AI-powered summaries.
